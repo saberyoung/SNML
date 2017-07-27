@@ -1,0 +1,36 @@
+# initial setting for some input parameters
+
+[global]     ;   ------------    used by all scripts
+
+run:	     1
+	     ;1 Take all non 1 images(classifified already) from candidates as the memory 
+	     ;2 do classification now and let them to be the memory
+area_factor:  20
+	      ;pixel of image to do ML, eg, 20*20
+JD:	      2457754
+	      ;do ML for all images after JD
+ML_model:     2
+	      ;machine learning methods: 
+	      ;1DecisionTree 2RandomForest 3ExtraTrees 4AdaBoost
+
+[ML]     ;   ------------    parameters for machine learning algorithm
+n_estimators:		     120
+			     ;
+random_state:		     0
+			     ;
+max_depth_dt:		     2
+			     ;None,2,5,8...
+max_depth_ab:		     3
+			     ;
+test_size:		     0.2
+			     ;
+
+[run2]     ;   ------------    parameters for run=2
+classification:		       1
+			       ;
+JD:			       2457921
+			       ;
+JDdiff:			       50
+			       ;
+area_factor:		       20
+			       ;
